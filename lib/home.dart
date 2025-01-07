@@ -1,39 +1,83 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class myhomepage extends StatelessWidget {
-  const myhomepage({super.key});
-
+   myhomepage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
     return Container(
-      color: const Color.fromARGB(255, 157, 41, 41),
+      
+      color:const Color.fromARGB(255, 230, 217, 220),
+
       child: SafeArea(
+        
+       
+        // ignore: prefer_const_constructors
         child: Scaffold(
-          body: Column(
+
+          
+
+
+
+          
+         
+
+          body:Column(
+             
+            
             children: [
+
+          
+
               Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+
                 children: [
-                  ImageIcon(
-                    AssetImage('assets/omu.png'),
-                    size: 30,
-                    color: const Color.fromARGB(255, 193, 31, 31),
-                  ),
-                  Expanded(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
+
+                  
+                    ImageIcon(AssetImage('assets/list.png'),size: 40.0,color:const Color.fromARGB(255, 164, 84, 79)),
+                    
+                    Row(
+                      
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Icon(Icons.search),
-                        SizedBox(width: 16.0), // Add spacing between icons
-                        Icon(Icons.notifications),
-                      ],
-                    ),
-                  ),
+                      
+
+                      Icon(Icons.search,size:40),
+                      Icon(Icons.notifications,size:40)
+
+                    ],)
+
                 ],
+
+
+
               ),
-            ],
+
+
+
+          ],
+
+
+
+
           ),
-        ),
+
+
+
+      )
+      
+      
+      
       ),
+
+
+
+
+
+
     );
   }
 }
