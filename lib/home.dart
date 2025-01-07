@@ -6,70 +6,34 @@ class myhomepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-          color: const Color.fromARGB(255, 157, 41, 41),
+      color: const Color.fromARGB(255, 157, 41, 41),
       child: SafeArea(
-        
         child: Scaffold(
-          body:Column(
-
+          body: Column(
             children: [
-                Row(children: 
-                [
+              Row(
+                children: [
                   ImageIcon(
-                        AssetImage('assets/omu.png'),
-                          color: const Color.fromARGB(255, 217, 214, 202),
+                    AssetImage('assets/omu.png'),
+                    size: 30,
+                    color: const Color.fromARGB(255, 193, 31, 31),
+                  ),
+                  Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Icon(Icons.search),
+                        SizedBox(width: 16.0), // Add spacing between icons
+                        Icon(Icons.notifications),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-
-              
-
-
-
-                ]
-                
-                
-                )
-
-
-
-
             ],
-          
-          
-          
-          
-          
-          
-          )
-
-
-
-
-
-
+          ),
         ),
-      
-        
-
-
-
-
-
-        ),
-      
-      );
-
-
-
-
-
-
-    
-
-
-    
-    
-    
-    
-  
+      ),
+    );
   }
 }
