@@ -6,10 +6,36 @@ class myhomepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-
+          color: Colors.white,
       child: SafeArea(
         
         child: Scaffold(
+          body:Column(
+
+            children: [
+                Row(children: 
+                [
+                  Image(image: AssetImage("imge/"))
+
+
+
+
+                ],
+                
+                
+                )
+
+
+
+
+            ],
+          
+          
+          
+          
+          
+          
+          )
 
 
 
