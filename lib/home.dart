@@ -6,7 +6,7 @@ class myhomepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-          color: Colors.white,
+          color: const Color.fromARGB(255, 157, 41, 41),
       child: SafeArea(
         
         child: Scaffold(
@@ -15,12 +15,16 @@ class myhomepage extends StatelessWidget {
             children: [
                 Row(children: 
                 [
-                  Image(image: AssetImage("asset/home_icon.png"))
+                  ImageIcon(
+                        AssetImage('assets/omu.png'),
+                          color: const Color.fromARGB(255, 217, 214, 202),
+              ),
+
+              
 
 
 
-
-                ],
+                ]
                 
                 
                 )

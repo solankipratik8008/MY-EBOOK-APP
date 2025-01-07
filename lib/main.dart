@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_ebooks/home.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MainApp());
 }
 
 class MainApp extends StatelessWidget {
