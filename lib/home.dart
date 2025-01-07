@@ -26,42 +26,50 @@ class myhomepage extends StatelessWidget {
           body:Column(
              
             
-            children: [
+      children: [
+            Container(
+
+
+
+              
+                margin: const EdgeInsets.only(right: 20,left: 20),
+             
+              
+              
+              
+                  child:Row(
+                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              
+              
+                    children: [
+              
+                      
+                        ImageIcon(AssetImage('assets/list.png'),size:25.0,color:const Color.fromARGB(255, 1, 0, 1)),
+                        
+                        Row(
+                          
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                          
+              
+                          Icon(Icons.search,size:25),
+                          Icon(Icons.notifications,size:25)
+              
+                        ],)
+              
+                    ],
+
+              
+              
+              
+                  ),
+             ),  
+              
+      ],
+            ),
+
 
           
-
-              Row(
-                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
-
-                children: [
-
-                  
-                    ImageIcon(AssetImage('assets/list.png'),size: 40.0,color:const Color.fromARGB(255, 164, 84, 79)),
-                    
-                    Row(
-                      
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                      
-
-                      Icon(Icons.search,size:40),
-                      Icon(Icons.notifications,size:40)
-
-                    ],)
-
-                ],
-
-
-
-              ),
-
-
-
-          ],
-
-
-
 
           ),
 
@@ -71,13 +79,13 @@ class myhomepage extends StatelessWidget {
       
       
       
-      ),
+      );
 
 
 
 
 
 
-    );
+    
   }
 }
