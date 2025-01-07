@@ -15,7 +15,7 @@ class myhomepage extends StatelessWidget {
             children: [
                 Row(children: 
                 [
-                  Image(image: AssetImage("imge/"))
+                  Image(image: AssetImage("asset/home_icon.png"))
 
 
 
